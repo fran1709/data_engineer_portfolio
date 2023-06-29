@@ -5,7 +5,7 @@ from twilio_config import * #credentials
 # Function that get the Json from the API with all the info.
 def get_json():
     # Setting query info
-    query = '10.4, -84.38'  # Location by latitude, longitude.  (Quesada, Alajuela, Costa Rica)
+    query = QUERY  # Location by latitude, longitude or str like 'Quesada, Alajuela, Costa Rica'
     api_key = API_KEY_WAPI
     url_clima = 'http://api.weatherapi.com/v1/forecast.json?key='+api_key+'&q='+query+'&days=1&aqi=no&alerts=no'
 
